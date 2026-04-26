@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charectize - Character Customizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>Charectize - Character Customizer</h1>
+
+    <!-- Character Preview -->
+    <div class="character-container">
+      <div class="character" id="character">
+        <img id="base" src="assets/base.png" alt="Base Character" />
+        <img id="hair" src="assets/hair1.png" alt="Hair" />
+        <img id="eyes" src="assets/eyes1.png" alt="Eyes" />
+        <img id="lips" src="assets/lips1.png" alt="Lips" />
+        <img id="accessory1" class="accessory" src="assets/accessory1.png" alt="Accessory 1" />
+        <img id="accessory2" class="accessory" src="assets/accessory2.png" alt="Accessory 2" />
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <div class="control-group">
+        <h3>Hair</h3>
+        <button onclick="changePart('hair', 1)">1</button>
+        <button onclick="changePart('hair', 2)">2</button>
+        <button onclick="changePart('hair', 3)">3</button>
+      </div>
+
+      <div class="control-group">
+        <h3>Eyes</h3>
+        <button onclick="changePart('eyes', 1)">1</button>
+        <button onclick="changePart('eyes', 2)">2</button>
+        <button onclick="changePart('eyes', 3)">3</button>
+      </div>
+
+      <div class="control-group">
+        <h3>Lips</h3>
+        <button onclick="changePart('lips', 1)">1</button>
+        <button onclick="changePart('lips', 2)">2</button>
+        <button onclick="changePart('lips', 3)">3</button>
+      </div>
+
+      <div class="control-group">
+        <h3>Accessories</h3>
+        <button onclick="toggleAccessory('accessory1')">Toggle 1</button>
+        <button onclick="toggleAccessory('accessory2')">Toggle 2</button>
+      </div>
+
+      <button id="downloadBtn">Download PNG</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
