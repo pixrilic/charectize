@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.character-container {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  margin: 20px auto;
+}
+
+.character {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.character img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Layering order */
+#base { z-index: 1; }
+#eyes { z-index: 2; }
+#lips { z-index: 3; }
+#hair { z-index: 4; }
+.accessory { z-index: 5; }
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.control-group {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.control-group h3 {
+  margin-top: 0;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#downloadBtn {
+  background-color: #28a745;
+}
+
+#downloadBtn:hover {
+  background-color: #218838;
+}
